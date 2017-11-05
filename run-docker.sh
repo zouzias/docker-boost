@@ -8,5 +8,5 @@ if [ $# -eq 0 ]
 fi
 
 BOOST_VERSION=$1
-docker run -ti boost:${BOOST_VERSION} /bin/bash
+docker run -ti zouzias/boost:${BOOST_VERSION} /bin/bash
 
