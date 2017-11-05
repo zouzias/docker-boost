@@ -10,4 +10,5 @@ BOOST_VERSION="$1"
 BOOST_VERSION_=${BOOST_VERSION//./_}
 
 docker rmi zouzias/boost:${BOOST_VERSION}
-docker build . -t zouzias/boost:${BOOST_VERSION}
+docker build . -t zouzias/boost:${BOOST_VERSION} --build-arg BOOST_VERSION=${BOOST_VERSION} \
+	--build-arg BOOST_VERSION_=${BOOST_VERSION_}
