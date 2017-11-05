@@ -7,8 +7,6 @@ ENV DEBIAN_FRONTEND noninteractive
 WORKDIR /usr/include/
 
 # We pass the boost version argument as argument
-ARG BOOST_VERSION
-ARG BOOST_VERSION_
 ENV BOOST_VERSION=${BOOST_VERSION}
 ENV BOOST_VERSION_=${BOOST_VERSION_}
 ENV BOOST_ROOT=/usr/include/boost
