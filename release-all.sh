@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Release all images to DockerHub.
 
 for VERSION in `cat boost-versions.txt`
 do
