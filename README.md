@@ -4,10 +4,10 @@ Dockerfile that setups Ubuntu with Boost library installed. It installs the C++ 
 
 
 ## Build
-To build the image with Boost version 1.65.1
+To build the image with Boost version 1.67.0
 
 ```bash
-./build-docker.sh 1.65.1
+./build-docker.sh 1.67.0
 ```
 
 ## Run
@@ -15,15 +15,15 @@ To build the image with Boost version 1.65.1
 To run the above built image
 
 ```bash
-./run-docker.sh 1.65.1
+./run-docker.sh 1.67.0
 ```
 
 ## Docker Images
 
-To use the docker image (say version 1.65.0), run
+To use the docker image (say version 1.67.0), run
 
 ```
-docker run -it zouzias/boost:1.65.0 bash
+docker run -it zouzias/boost:1.67.0 bash
 ```
 
 ### Boost versions
