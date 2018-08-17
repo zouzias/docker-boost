@@ -1,4 +1,4 @@
-# docker-boost
+# docker-boost [![Build Status](https://travis-ci.org/zouzias/docker-boost.svg?branch=master)](https://travis-ci.org/zouzias/docker-boost)
 
 Dockerfile that setups Ubuntu with Boost library installed. It installs the C++ Boost libraries (header only) under `/usr/include/boost/`.
 
