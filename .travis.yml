@@ -1,0 +1,10 @@
+git:
+  depth: 1
+
+language: bash
+
+services:
+  - docker
+
+before_install:
+  - ./build-docker.sh 1.67.0
