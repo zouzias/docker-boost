@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Hook for custom builds required from hub.docker.com
+#
+# See: https://docs.docker.com/docker-hub/builds/advanced/#custom-build-phase-hooks
+
+ORG="zouzias"
+BOOST_VERSION="$1"
+BOOST_VERSION_=${BOOST_VERSION//./_}
+
+docker rmi ${ORG}/boost:${BOOST_VERSION}
+docker build . -t ${ORG}/boost:${BOOST_VERSION} --build-arg BOOST_VERSION=${BOOST_VERSION} \
+	--build-arg BOOST_VERSION_=${BOOST_VERSION_}
+
