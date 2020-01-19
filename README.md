@@ -1,6 +1,6 @@
 # docker-boost [![Build Status](https://travis-ci.org/zouzias/docker-boost.svg?branch=master)](https://travis-ci.org/zouzias/docker-boost)
 
-Dockerfile that setups Ubuntu with Boost library installed. It installs the C++ Boost libraries (header only) under `/usr/include/boost/`.
+Dockerfile that setups Ubuntu Bionic with Boost libraries installed. The C++ Boost libraries (header only) are installed under `/usr/include/boost/`.
 
 
 ## Build
