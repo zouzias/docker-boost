@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 
 MAINTAINER Anastasios Zouzias <my_last_name@gmail.com>
 
-ARG DEBIAN_FRONTEND noninteractive
+ARG DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /usr/include/
 
