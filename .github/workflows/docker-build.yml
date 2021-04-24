@@ -11,4 +11,5 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag zouzias/boost:$(date +%s)
+      run: docker build . --file Dockerfile --tag zouzias/boost:$(date +%s) --build-arg BOOST_VERSION=1.65.0 \
+	--build-arg BOOST_VERSION_=1_65_0
