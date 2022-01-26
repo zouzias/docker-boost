@@ -12,6 +12,6 @@ ORG="zouzias"
 BOOST_VERSION="$1"
 BOOST_VERSION_=${BOOST_VERSION//./_}
 
-docker rmi ${ORG}/boost:${BOOST_VERSION}
-docker build . -t ${ORG}/boost:${BOOST_VERSION} --build-arg BOOST_VERSION=${BOOST_VERSION} \
-	--build-arg BOOST_VERSION_=${BOOST_VERSION_}
+docker rmi "${ORG}/boost:${BOOST_VERSION}"
+docker build . -t "${ORG}/boost:${BOOST_VERSION}" --build-arg BOOST_VERSION="${BOOST_VERSION}" \
+	--build-arg BOOST_VERSION_="${BOOST_VERSION_}"

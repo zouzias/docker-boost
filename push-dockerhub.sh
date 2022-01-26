@@ -9,6 +9,6 @@ if [ $# -eq 0 ]
     exit
 fi
 
-./build-docker.sh $1
+./build-docker.sh "$1"
 docker login
-docker push ${ORG}/boost:$1
+docker push "${ORG}/boost:$1"
