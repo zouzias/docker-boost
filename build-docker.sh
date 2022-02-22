@@ -4,7 +4,7 @@
 
 if [ $# -eq 0 ]
   then
-    echo "Usage: ./build-docker BOOST_VERSION, i.e., 1.65.1"
+    echo "Usage: ./build-docker.sh BOOST_VERSION, i.e., 1.65.1"
     exit
 fi
 
