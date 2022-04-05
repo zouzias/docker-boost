@@ -6,7 +6,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /usr/include/
 
-# We pass the boost version argument as argument
+# We pass the boost version as argument
 ARG BOOST_VERSION
 ARG BOOST_VERSION_
 ENV BOOST_VERSION=${BOOST_VERSION}
